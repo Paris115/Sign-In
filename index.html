@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+     
+    <!--Introduccion de datos de username y contraseña (input)-->
+    
+    <div id="contenedor">
+        <div id="logIn">
+            <h2 id="cabezaHeader">Login</h2>
+
+            <input class="datosInput" type="text" name="nombreDeUsuario" id="userName" onblur="verifyUser(document.getElementById('userName').value)"  placeholder="Username"><br>
+            <p id="passWordMal" class="datosIncorrecto">*The password is incorrect</p>
+            <input class="datosInput" type="password" name="contraseña" id="passWord" onfocus="correctPassword()" placeholder="Password"><br>
+            <p id="confirmPassWordMal" class="datosIncorrecto">*The passwords must be the same</p>
+            <input class="datosInput" type="password" name="contraseña" id="confirmPassWord" onfocus="correctConfirmPassword()"  placeholder="Confirm password"><br>
+
+            <button class="botonSign" id="signIn" style="display: block;" onclick="checkPassword()">Sign In</button><br>
+            <button class="botonSign" id="signUp" style="display: none;" onclick="newUser(document.getElementById('passWord').value)">Sign Up</button><br>
+
+            <a href="#" style="display: block;" id="enlaceReg"onclick="registroUserEnlace()">Don't have an account? Register.</a>
+            <a href="#" style="display: none;" id="enlaceLog" onclick="loginUserEnlace()">Already have an account? Login.</a>
+
+       </div>
+
+    </div>
+    <script src="JS/myScripts.js"></script>
+</body>
+
+</html>
