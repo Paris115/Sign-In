@@ -23,12 +23,17 @@
             <p id="confirmPassWordMal" class="datosIncorrecto">*The passwords must be the same</p>
             <input class="datosInput" type="password" name="contraseña" id="confirmPassWord" onfocus="correctConfirmPassword()"  placeholder="Confirm password"><br>
 
-            <button class="botonSign" id="signIn" style="display: block;" onclick="checkPassword()">Sign In</button><br>
-            <button class="botonSign" id="signUp" style="display: none;" onclick="newUser(document.getElementById('passWord').value)">Sign Up</button><br>
+            <button class="botonSign" id="signIn" style="display: block;" onclick="checkPassword(document.getElementById('passWord').value, document.getElementById('userName').value)">Sign In</button><br>
+            <button class="botonSign" id="signUp" style="display: none;" onclick="newUser()">Sign Up</button><br>
 
-            <a href="#" style="display: block;" id="enlaceReg"onclick="registroUserEnlace()">Don't have an account? Register.</a>
-            <a href="#" style="display: none;" id="enlaceLog" onclick="loginUserEnlace()">Already have an account? Login.</a>
+            <a href="#" class="enlaceCambio" style="display: block;" id="enlaceReg"onclick="registroUserEnlace()">Don't have an account? Register.</a>
+            <a href="#" class="enlaceCambio" style="display: none;" id="enlaceLog" onclick="loginUserEnlace()">Already have an account? Login.</a>
 
+       </div>
+       <div style="display: none;" id="cuadroVerificado">
+            <h2 id="headerVerificado">The user has been verified.</h2>
+            <a href="#" class="enlaceVerificado" id="enlaceEntrar">Enter</a>
+            <a href="http://127.0.0.1:5500/index.html" class="enlaceVerificado" id="enlaceVolver">Return</a>
        </div>
 
     </div>

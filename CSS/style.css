@@ -48,7 +48,13 @@
     #8e44ad 20% 40%,
     #3498db 40% 60%, 
     #e74c3c 60% 80%,
-    #f1c40f 80% 100%);                    
+    #f1c40f 80% 100%);
+    background-image: linear-gradient(to right,
+    #27ae60 0% 20%, 
+    #8e44ad 20% 40%,
+    #3498db 40% 60%, 
+    #e74c3c 60% 80%,
+    #f1c40f 80% 100%);                
 }
 
 #cabezaHeader {
@@ -103,16 +109,50 @@
     cursor: pointer;
 }
 
-a {
+.enlaceCambio {
     font-size: 0.5rem;
     text-decoration-line: none;
     margin-bottom: 1.25rem;
     color: #3599db;
 }
 
-
-
-@keyframes sombra {
-    from {box-shadow: 0px 0px 0px gray;}
-    to {box-shadow: 3px 3px 5px gray;}
+#cuadroVerificado {
+    background-color: #2eac36;
+    position: relative;
+    width: 45vw;
+    height: 20vh;
+    border: #000 1px solid;
+    border-radius: 3px;
 }
+
+#headerVerificado {
+    color: white;
+    margin: 5px 1px 10px 1px;
+    font-size: 1rem;
+}
+
+.enlaceVerificado {
+    background-color: #136aa4;
+    color: black;
+    border: #000 1px solid;
+    text-decoration-line: none;
+}
+
+#enlaceEntrar {
+    position: absolute;
+    left: 1rem
+}
+
+#enlaceVolver {
+    position: absolute;
+    right: 1rem
+}
+
+/* #enlaceEntrar:active {
+    background-color: #13ffff;
+}
+
+#enlaceVolver:active {
+    background-color: #a41313;
+} */
+

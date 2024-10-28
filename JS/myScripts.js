@@ -31,7 +31,7 @@ let usuarioReg = {
     Hola: "Adios"
 };
 
-/*
+/**
 * @return { string} usuario
 * @return { boolean}
 */
@@ -44,7 +44,7 @@ function checkUser(usuario) {
 
 
 // Funcion que verifica si el usuario esta registrado o no
-// @param {string} usuario
+/**  @param {string} usuario*/
 function verifyUser(usuario) {
     if (checkUser(usuario)) {
         //Si existe, espero a que el usuario termine de escribir el usuario 
@@ -74,15 +74,17 @@ function verifyUser(usuario) {
 
 //Funcion que recibe una contraseña y un nombre de usuario y verifica si la 
 // contraseña es la que pertenece al usuario
-//@param {string} contrasena
-//@param {string} usuario
-
+/**  
+ @param {string} contrasena
+ @param {string} usuario
+*/
 function checkPassword(contrasena, usuario) {
     if (contrasena == usuarioReg[usuario]) {
         //Si es verdadera, loguea
         console.log("La contraseña es correcta")
         console.log(contrasena)
-
+        document.getElementById("cuadroVerificado").style.display = "block";
+        document.getElementById("logIn").style.display = "none";
     }
     //Si es incorrecta, muestra un mensaje de aviso
     else {
@@ -116,8 +118,8 @@ function newUser() {
     if (checkConfirmPassword() == true) {
         //crea un nuevo usuario con su contraseña si ambas son correctas
         let contrasenaNew = document.getElementById('passWord').value
-        console.log(usuarioReg)
         usuarioReg.usuario = contrasenaNew;
+        console.log(usuarioReg)
     } else {
                 //Si difieren, se muestra un mensaje de aviso
         document.getElementById("confirmPassWordMal").style.display = "block";
