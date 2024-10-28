@@ -17,14 +17,14 @@
         <div id="logIn">
             <h2 id="cabezaHeader">Login</h2>
 
-            <input class="datosInput" type="text" name="nombreDeUsuario" id="userName" onblur="verifyUser(document.getElementById('userName').value)"  placeholder="Username"><br>
+            <input class="datosInput" type="text" name="nombreDeUsuario" id="userName" onblur="verifyUser(document.getElementById('userName').value)"  placeholder="Username">
             <p id="passWordMal" class="datosIncorrecto">*The password is incorrect</p>
-            <input class="datosInput" type="password" name="contraseña" id="passWord" onfocus="correctPassword()" placeholder="Password"><br>
+            <input class="datosInput" type="password" name="contraseña" id="passWord" onfocus="correctPassword()" placeholder="Password">
             <p id="confirmPassWordMal" class="datosIncorrecto">*The passwords must be the same</p>
-            <input class="datosInput" type="password" name="contraseña" id="confirmPassWord" onfocus="correctConfirmPassword()"  placeholder="Confirm password"><br>
+            <input class="datosInput" type="password" name="contraseña" id="confirmPassWord" onfocus="correctConfirmPassword()"  placeholder="Confirm password">
 
-            <button class="botonSign" id="signIn" style="display: block;" onclick="checkPassword(document.getElementById('passWord').value, document.getElementById('userName').value)">Sign In</button><br>
-            <button class="botonSign" id="signUp" style="display: none;" onclick="newUser()">Sign Up</button><br>
+            <button class="botonSign" id="signIn" style="display: block;" onclick="checkPassword(document.getElementById('passWord').value, document.getElementById('userName').value)">Sign In</button>
+            <button class="botonSign" id="signUp" style="display: none;" onclick="newUser()">Sign Up</button>
 
             <a href="#" class="enlaceCambio" style="display: block;" id="enlaceReg"onclick="registroUserEnlace()">Don't have an account? Register.</a>
             <a href="#" class="enlaceCambio" style="display: none;" id="enlaceLog" onclick="loginUserEnlace()">Already have an account? Login.</a>

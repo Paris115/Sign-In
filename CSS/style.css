@@ -18,6 +18,8 @@
 #logIn {
     position: relative;
     background-color: #ecf0f1;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,7 +36,7 @@
     right: 0px;
     top: 0px;
     width: 100%;
-    height: 4px;
+    height: 0.25rem;
     border: none;
     border-radius: 2px 2px 0 0;
     background-image: -moz-linear-gradient(to right,
@@ -68,10 +70,10 @@
 .datosInput {
     text-align: left;
     margin-bottom: 1.25rem;
-    padding: 5px 5px;
+    padding: 0.3125rem 0.3125rem;
     border: 1px grey solid;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .datosInput:focus {
@@ -82,10 +84,10 @@
 .datosIncorrecto {
     display: none;
     color: rgb(115, 2, 2);
-    font-size: 7px;
+    font-size: 0.4375rem;
     text-align: right;
-    margin-bottom: 2px;
-    margin-left: 4px;
+    margin-bottom: 0.125rem;
+    margin-left: 0.25rem;
 }
 
 #confirmPassWord {
@@ -119,33 +121,41 @@
 #cuadroVerificado {
     background-color: #2eac36;
     position: relative;
-    width: 45vw;
-    height: 20vh;
+    width:  20rem;
+    height: 10rem;
     border: #000 1px solid;
-    border-radius: 3px;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 #headerVerificado {
     color: white;
-    margin: 5px 1px 10px 1px;
-    font-size: 1rem;
+    margin: 10px 2px 20px 2px;
+    font-size: 2rem;
 }
 
 .enlaceVerificado {
     background-color: #136aa4;
     color: black;
-    border: #000 1px solid;
+    border: #000 2px solid;
     text-decoration-line: none;
 }
 
 #enlaceEntrar {
     position: absolute;
-    left: 1rem
+    left: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 #enlaceVolver {
     position: absolute;
-    right: 1rem
+    right: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
 }
 
 /* #enlaceEntrar:active {
